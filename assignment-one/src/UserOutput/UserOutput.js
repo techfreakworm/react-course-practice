@@ -1,9 +1,10 @@
 import React from 'react'
 
+
 const userOutput = (props) => {
     return (
         <div>
-            <p>Username: {props.userName}</p>
+            <p>Username: {props.username}</p>
             <p>Some more random text!!!</p>
         </div>
     );

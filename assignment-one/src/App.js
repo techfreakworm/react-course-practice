@@ -7,16 +7,20 @@ import UserOutput from './UserOutput/UserOutput'
 class App extends Component {
 
   state = {
-    userName: 'superMax'
+    username: 'superMax'
+  }
+
+  usernameChangedHandler = (event) => {
+      this.setState({username: event.target.value})
   }
 
   render(){
     return (
       <div>
-        <UserInput/>
-        <UserOutput userName={this.state.userName}/>
-        <UserOutput userName={this.state.userName}/>
-        <UserOutput userName="Max"/>
+        <UserInput changed={this.usernameChangedHandler}/>
+        <UserOutput username={this.state.username}/>
+        <UserOutput username={this.state.username}/>
+        <UserOutput username="Max"/>
       </div>
     );
   }
