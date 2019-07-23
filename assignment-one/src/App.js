@@ -17,10 +17,13 @@ class App extends Component {
   render(){
     return (
       <div>
-        <UserInput changed={this.usernameChangedHandler}/>
-        <UserOutput username={this.state.username}/>
-        <UserOutput username={this.state.username}/>
-        <UserOutput username="Max"/>
+        <UserInput 
+        changed={this.usernameChangedHandler}
+        currentName={this.state.username}
+        />
+        <UserOutput userName={this.state.username}/>
+        <UserOutput userName={this.state.username}/>
+        <UserOutput userName="Max"/>
       </div>
     );
   }
