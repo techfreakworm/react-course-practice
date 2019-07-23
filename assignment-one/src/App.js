@@ -8,9 +8,9 @@ function App() {
   return (
     <div>
       <UserInput/>
-      <UserOutput/>
-      <UserOutput/>
-      <UserOutput/>
+      <UserOutput userName="Max"/>
+      <UserOutput userName="Max"/>
+      <UserOutput userName="Max"/>
     </div>
   );
 }
