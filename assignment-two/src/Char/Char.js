@@ -6,10 +6,11 @@ const char = (props) => {
         padding: '16px',
         margin: '16px',
         border: '1px solid black',
-        textAlign: 'center'
+        textAlign: 'center',
+        pointer: 'cursor'
     }
     return (
-        <div style={style}>
+        <div style={style} onClick={props.clicked}>
             {props.character}
         </div>
     );
